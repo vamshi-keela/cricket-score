@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="team1">IND</string>
+    <string name="team2">PAK</string>
+    <string name="target">200</string>
+    <string name="score">120</string>
+    <string name="overs">15.0</string>
+    <string name="batsman1">VIRAT K 100(50)</string>
+    <string name="batsman2">Rohit S 100(50)</string>
+    <string name="bowler">Rohit S 100(50)</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>
