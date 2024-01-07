@@ -5,6 +5,25 @@
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:label="circket_score">
+        <receiver
+            android:name=".CricketWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cricket_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".CricketWidgetConfigureActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
 
         <receiver
             android:name=".CricketScoreWidget"
@@ -16,15 +35,13 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/cricket_score_widget_info" />
-        </receiver>
-
-        <activity
-            android:name=".CricketScoreWidgetConfigureActivity"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
-            </intent-filter>
-        </activity>
+        </receiver> <!-- <activity -->
+        <!-- android:name=".CricketScoreWidgetConfigureActivity" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

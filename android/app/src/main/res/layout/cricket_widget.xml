@@ -74,28 +74,28 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical">
-        <!-- TextView 5 -->
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="7/0"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:layout_above="@+id/textView6"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="4dp"/>
+            <!-- TextView 5 -->
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7/0"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_above="@+id/textView6"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="4dp"/>
 
-        <!-- TextView 6 -->
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0.4"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:layout_above="@+id/textView7"
-            android:layout_marginBottom="25dp"/>
+            <!-- TextView 6 -->
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.4"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_above="@+id/textView7"
+                android:layout_marginBottom="25dp"/>
         </LinearLayout>
 
         <!-- TextView 7 -->
