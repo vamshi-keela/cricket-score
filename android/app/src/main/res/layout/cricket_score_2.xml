@@ -8,7 +8,6 @@
     <!-- Top Part -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="center"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -21,9 +20,9 @@
             android:gravity="center"
             android:layout_weight="1"
             android:layout_marginStart="8dp"
-            android:textColor="#FFFFFF"
+            android:layout_marginTop="38dp"
             android:layout_marginEnd="20dp"
-            />
+            android:layout_marginBottom="38dp"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -41,7 +40,7 @@
                 android:gravity="center"
                 android:layout_weight="1"
                 android:layout_above="@+id/textView3"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginBottom="4dp"/>
 
             <!-- TextView 3 -->
@@ -51,7 +50,7 @@
                 android:id="@+id/oversPlayed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="25dp"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="20" />
@@ -66,9 +65,9 @@
             android:layout_weight="1"
             android:layout_above="@+id/textView5"
             android:layout_marginLeft="20dp"
-
+            android:layout_marginTop="38dp"
             android:layout_marginRight="20dp"
-            />
+            android:layout_marginBottom="35dp"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -84,7 +83,7 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:layout_above="@+id/textView6"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginBottom="4dp"/>
 
             <!-- TextView 6 -->
@@ -96,7 +95,7 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:layout_above="@+id/textView7"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="25dp"/>
         </LinearLayout>
 
         <!-- TextView 7 -->
@@ -108,13 +107,16 @@
             android:gravity="center"
             android:layout_weight="1"
             android:layout_marginRight="8dp"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="38dp"/>
     </LinearLayout>
 
     <!-- Bottom Part -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="59dp"
+        android:layout_marginBottom="635dp"
         android:background="#124413">
 
         <LinearLayout
@@ -210,133 +212,4 @@
             android:gravity="center"
             android:text="0/7 (0.4)" />
     </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal"
-        android:layout_marginTop="4dp"
-        android:padding="4dp">
-
-        <!-- Circular container 1 -->
-        <FrameLayout
-            android:id="@+id/circularContainer1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:layout_marginRight="4dp"
-            android:background="@drawable/circular_background">
-
-            <TextView
-                android:id="@+id/numberTextView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="1"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:gravity="center"/>
-
-        </FrameLayout>
-
-        <!-- Circular container 2 -->
-        <FrameLayout
-            android:id="@+id/circularContainer2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:layout_marginRight="4dp"
-            android:background="@drawable/circular_background">
-
-            <TextView
-                android:id="@+id/numberTextView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="2"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:gravity="center"/>
-
-        </FrameLayout>
-        <FrameLayout
-            android:id="@+id/circularContainer3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:layout_marginRight="4dp"
-            android:background="@drawable/circular_background">
-
-            <TextView
-                android:id="@+id/numberTextView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="1"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:gravity="center"/>
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/circularContainer4"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:layout_marginRight="4dp"
-            android:background="@drawable/circular_background">
-
-            <TextView
-                android:id="@+id/numberTextView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="2"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:gravity="center"/>
-
-        </FrameLayout>
-        <FrameLayout
-            android:id="@+id/circularContainer5"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:layout_marginRight="4dp"
-            android:background="@drawable/circular_background">
-
-            <TextView
-                android:id="@+id/numberTextView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="1"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:gravity="center"/>
-
-        </FrameLayout>
-        <FrameLayout
-            android:id="@+id/circularContainer6"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:layout_marginRight="4dp"
-            android:background="@drawable/circular_background">
-
-            <TextView
-                android:id="@+id/numberTextView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="2"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:gravity="center"/>
-
-        </FrameLayout>
-    </LinearLayout>
-
 </LinearLayout>

@@ -4,7 +4,29 @@
     <application
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
-        android:label="circket_score">
+        android:label="cricket score">
+        <receiver
+            android:name=".cricket_score_1"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cricket_score_1_info" />
+        </receiver>
+        <receiver
+            android:name=".cricket_score_2"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cricket_score_2_info" />
+        </receiver>
         <receiver
             android:name=".CricketWidget"
             android:exported="false">
@@ -23,19 +45,16 @@
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
-        </activity>
-
-<!--        <receiver-->
-<!--            android:name=".CricketScoreWidget"-->
-<!--            android:exported="false">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />-->
-<!--            </intent-filter>-->
-
-<!--            <meta-data-->
-<!--                android:name="android.appwidget.provider"-->
-<!--                android:resource="@xml/cricket_score_widget_info" />-->
-<!--        </receiver> &lt;!&ndash; <activity &ndash;&gt;-->
+        </activity> <!-- <receiver -->
+        <!-- android:name=".CricketScoreWidget" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.appwidget.action.APPWIDGET_UPDATE" /> -->
+        <!-- </intent-filter> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.appwidget.provider" -->
+        <!-- android:resource="@xml/cricket_score_widget_info" /> -->
+        <!-- </receiver> &lt;!&ndash; <activity &ndash;&gt; -->
         <!-- android:name=".CricketScoreWidgetConfigureActivity" -->
         <!-- android:exported="false"> -->
         <!-- <intent-filter> -->
